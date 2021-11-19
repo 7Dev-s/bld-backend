@@ -1,0 +1,9 @@
+spring:
+  config:
+    use-legacy-processing: true
+  application:
+    name: bld-api-gateway
+  jmx:
+    default-domain: ${spring.application.name}
+  profiles:
+    include: ${BLD_AMBIENCE:dev}
